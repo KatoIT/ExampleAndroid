@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anha" />
+
+    <EditText
+        android:id="@+id/editTextNameFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Họ tên"
+        android:inputType="textPersonName"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextAgeFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Năm sinh"
+        android:inputType="numberSigned"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNameFA"
+        app:layout_constraintStart_toStartOf="@+id/editTextNameFA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameFA" />
+
+    <Spinner
+        android:id="@+id/spinnerQueQuanFA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextVan"
+        app:layout_constraintStart_toStartOf="@+id/editTextVan"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVan" />
+
+    <Button
+        android:id="@+id/buttonSubmitFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerQueQuanFA"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/spinnerQueQuanFA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTongDiem" />
+
+    <ImageView
+        android:id="@+id/imageViewA"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewB"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewB"
+        app:layout_constraintTop_toTopOf="@+id/imageViewB"
+        app:srcCompat="@drawable/anha" />
+
+    <ImageView
+        android:id="@+id/imageViewB"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSubmitFA"
+        app:layout_constraintStart_toStartOf="@+id/buttonSubmitFA"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmitFA"
+        app:srcCompat="@drawable/anhb" />
+
+    <ImageView
+        android:id="@+id/imageViewC"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewB"
+        app:layout_constraintStart_toEndOf="@+id/imageViewB"
+        app:layout_constraintTop_toTopOf="@+id/imageViewB"
+        app:srcCompat="@drawable/anhc" />
+
+    <EditText
+        android:id="@+id/editTextToanFA"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Điểm toán"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editTextAgeFA"
+        app:layout_constraintStart_toStartOf="@+id/editTextAgeFA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAgeFA" />
+
+    <EditText
+        android:id="@+id/editTextVan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:hint="Điểm văn"
+        app:layout_constraintEnd_toEndOf="@+id/editTextToanFA"
+        app:layout_constraintStart_toStartOf="@+id/editTextToanFA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextToanFA" />
+
+    <TextView
+        android:id="@+id/textViewTongDiem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tổng điểm: "
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerQueQuanFA"
+        app:layout_constraintStart_toStartOf="@+id/spinnerQueQuanFA"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerQueQuanFA" />
+
+</android.support.constraint.ConstraintLayout>

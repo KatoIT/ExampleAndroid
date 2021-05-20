@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Service2Activity">
+
+    <TextView
+        android:id="@+id/textViewWeather2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mua"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWeather1"
+        app:layout_constraintStart_toStartOf="@+id/editTextLocation"
+        app:layout_constraintTop_toTopOf="@+id/textViewWeather1" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:text="Location"
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text=""
+        android:hint="Khu vực"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation" />
+
+    <TextView
+        android:id="@+id/textViewWeather1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+
+        android:text="Weather"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLocation"
+        app:layout_constraintStart_toStartOf="@+id/textViewLocation"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+    <Button
+        android:id="@+id/buttonXem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Xem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
